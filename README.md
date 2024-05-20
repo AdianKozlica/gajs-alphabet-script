@@ -1,4 +1,6 @@
-Adds letters from the Gaj's Alphabet to selected text
+## Adds letters from the Gaj's Alphabet to selected text
+
+#### NOTE: This script will modify your clipboard since what it does is cut the selected text, add the letters and then paste it back
 
 How it works:
 ```
@@ -14,4 +16,14 @@ How it works:
   'dj' -> 'đ'
 ```
 
-NOTE: This script will modify your clipboard since what it does is cut the selected text, add the letters and then paste it back
+How to run:
+```
+./gajs-alphabet-script.py
+```
+
+Dependencies:
+
+```
+  pyperclip >= 1.8.2
+  PyAutoGUI >= 0.9.54
+```
