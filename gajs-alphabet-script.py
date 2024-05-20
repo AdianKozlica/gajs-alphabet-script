@@ -17,6 +17,7 @@ GAJS_ALPHABET = {
 } 
     
 def main():
+    prev_clipboard = pyperclip.paste()
     pyautogui.hotkey('ctrl', 'x')
 
     selected_text = pyperclip.paste()
@@ -26,6 +27,7 @@ def main():
 
     pyperclip.copy(selected_text)
     pyautogui.hotkey('ctrl', 'v')
+    pyperclip.copy(prev_clipboard)
 
 if __name__ == '__main__':
     main()
